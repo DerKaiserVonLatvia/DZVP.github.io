@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="../assets/edumathc.png" sizes="192x192" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark">
+    <title>Kursi • EDUMATH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+    <script type="module" src="/main.js"></script>
+    <script src="https://flowbite.com/docs/flowbite.js"></script>
+    <script src="https://flowbite.com/docs/datepicker.js"></script>
+    <link rel="stylesheet" href="assets/tw.css">
+  </head>
+<!--P------------------------------------------------------------------>
+  <body class="bg-bgd text-base text-td selection:bg-tad selection:text-bgd overflow-hidden">
+    <div class="h-screen pb-12 sm:pb-0 overflow-y-auto overflow-x-hidden relative scroll-smooth perspective">
+<!--N------------------------------------------------------------------>
+      <nav class="sticky bg-bgd px-2 sm:px-4 py-2.5 z-20 top-0 left-0 border-4 border-t-0 rounded-b-2xl border-tad mx-0 md:mx-14">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+        <a href="" class="flex items-center">
+          <img src="../assets/edumathl.png" class="h-5 mr-3 sm:h-6">
+        </a>
+        <div class="flex md:order-2">
+          <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar6" class="flex items-center justify-between w-full pl-3 pr-1 text-tmd bg-none hover:text-td font-medium md:hover:bg-transparent  rounded-lg text-sm px-5 py-2.5 mr-3 md:mr-0 md:p-0 md:w-auto">
+            Valoda (LV)
+            <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </button>
+          <div id="dropdownNavbar6" class="z-10 hidden border-2 border-tad bg-bgd divide-y divide-bgd rounded-lg shadow w-auto">
+              <ul class="py-2 text-sm" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="../en/kursi.html" class="block px-4 py-2 mx-2 rounded font-medium md:hover:text-bgd text-tmd hover:bg-tad md:hover:bg-none hover:text-bgd ">EN</a>
+                </li>
+                <li>
+                  <a href="../ua/kursi.html" class="block px-4 py-2 mx-2 rounded font-medium md:hover:text-bgd text-tmd hover:bg-tad hover:text-bgd">UA</a>
+                </li>
+              </ul>
+          </div>
+          <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-tad rounded-lg md:hidden" aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+          <ul class="flex flex-col p-4 mt-4 border-2  rounded-lg bg-bgd md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-bgd border-tad">
+            <a href="../index.html" id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar2" class="flex items-center justify-between w-full py-2 pl-3 pr-4 md:hover:bg-transparent rounded md:hover:bg-transparent rounded md:hover:text-td text-tmd hover:bg-tad hover:text-bgd md:p-0 md:w-auto">
+              Ievads
+            </a>
+            <a href="" id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar2" class="flex items-center justify-between w-full py-2 pl-3 pr-4 md:hover:bg-transparent rounded md:hover:bg-transparent rounded md:hover:text-td text-td hover:bg-tad hover:text-bgd md:p-0 md:w-auto">
+              Kursu arhīvs
+            </a>
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar3" class="flex items-center justify-between w-full py-2 pl-3 pr-4 md:hover:bg-transparent rounded md:hover:bg-transparent rounded md:hover:text-td text-tmd hover:bg-tad hover:text-bgd md:p-0 md:w-auto">
+              Informācija
+              <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </button>
+            <div id="dropdownNavbar3" class="z-10 hidden border-2 border-tad bg-bgd divide-y divide-bgd rounded-lg shadow w-auto">
+                <ul class="py-2 text-sm" aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a href="about.html" class="block px-4 py-2 mx-2 rounded font-medium md:hover:text-bgd text-tmd hover:bg-tad md:hover:bg-none hover:text-bgd ">Par mums</a>
+                  </li>
+                  <li>
+                    <a href="contacts.html" class="block px-4 py-2 mx-2 rounded font-medium md:hover:text-bgd text-tmd hover:bg-tad hover:text-bgd">Kontakti</a>
+                  </li> 
+                </ul>
+            </div>
+          </ul>
+        </div>
+        </div>
+      </nav>
+<!--H------------------------------------------------------------------>
+      <header id="scroll-up" class="min-h-screen flex flex-col justify-evenly items-center relative preserve-3d bottom-40">
+        <div class="absolute bg-gradient-to-b inset-0 top-3/3 -bottom-32 from-tad/80 to-transparent distance-1"></div>
+        <div class="absolute bg-gradient-to-t inset-0 top-0/3 -bottom-64 from-bgd/80 to-transparent distance-1"></div>
+        <div class="absolute bg-gradient-to-t inset-0 top-0/3 -bottom-80 from-bgd/80 to-transparent distance-1"></div>
+        <div class="absolute bg-gradient-to-t inset-0 top-0/3 -bottom-128 from-bgd/80 to-transparent distance-1"></div>
+        <img class="absolute h-full w-full -z-20 object-cover object-center grayscale distance-1" src="../assets/dzvsk-full.jpg">
+        <h1 class="text-5xl text-center font-bold text-td tracking-wide py-12 drop-shadow-text-sm lg:drop-shadow-text-lg distance-2">
+          KURSU ARHĪVS
+        </h1>
+        <a href="../index.html" class="bg-tad text-bgd font-medium mb-20 py-3 px-8 rounded-xl border border-bgd focus:outline-none focus-visible:ring-4 ring-tad ring-offset-bgd ring-offset-2 flex items-center space-x-2 drop-shadow-text-sm lg:drop-shadow-text-lg distance-2">
+          <span class="tracking-wide">ATGRIEZTIES</span>
+          <svg aria-hidden="true" class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </a>
+      </header>
+<!--M------------------------------------------------------------------>
+      <main class="relative -mb-96 grid gap-16 sm:gap-24 lg:gap-40 overflow-hidden bottom-96">
+        <div class="columns border-4 bg-bgd border-tad rounded-xl mx-4 md:mx-16 lg:mx-28 mt-20 md:mt-20 lg:mt-0 p-5">
+          <small class="container grid gap-4 text-center max-w-prose tracking-widest text-tad uppercase drop-shadow-text-sm">Зобі, йди працювати, де реєстрація, що за колгосп, дякую.</small>
+          <hr class="w-auto my-6 border-tad sm:mx-auto lg:my-8 container"/>
+          <small class="container grid gap-4 text-center max-w-prose tracking-widest text-tad uppercase drop-shadow-text-sm">aaaaaaaaaA, pochemu ja tolko sejchas eto posmotrel,nazvanie temi ne pomnit, pod konec chisto zdoh,kto-to tiltanul na 5:47, chto c 6:55, 2 buharja, odin tekst ne pomnit, drugoj skleitj na montazhe ne mozhet</small>
+          <video class="container grid gap-4 max-w-prose" width="200" autoplay muted controls>
+            <source src="../assets/pozor.mp4" type="video/mp4">
+          </video>
+          <small class="container grid gap-4 text-center max-w-prose tracking-widest text-tad uppercase drop-shadow-text-sm">kal kursi Nr2</small>
+          <small class="container grid gap-4 text-center max-w-prose tracking-widest text-tad uppercase drop-shadow-text-sm">kal kursi nr3</small>
+          <small class="container grid gap-4 text-center max-w-prose tracking-widest text-tad uppercase drop-shadow-text-sm">kal kursi nr4</small>
+          <small class="container grid gap-4 text-center max-w-prose tracking-widest text-tad uppercase drop-shadow-text-sm">kal kursi nr5</small>
+          <small class="container grid gap-4 text-center max-w-prose tracking-widest text-tad uppercase drop-shadow-text-sm">kal kursi nr6</small>
+          <small class="container grid gap-4 text-center max-w-prose tracking-widest text-tad uppercase drop-shadow-text-sm">kal kursi nr7</small>
+          <small class="container grid gap-4 text-center max-w-prose tracking-widest text-tad uppercase drop-shadow-text-sm">kal kursi nr8</small>
+          <small class="container grid gap-4 text-center max-w-prose tracking-widest text-tad uppercase drop-shadow-text-sm">kal kursi nr9</small>
+          <small class="container grid gap-4 text-center max-w-prose tracking-widest text-tad uppercase drop-shadow-text-sm">kal kursi nr10</small>
+        </div>
+        <section id="buy" class="text-center container grid gap-4 max-w-prose ">
+          <h2 id="cta" class="text-3xl font-bold tracking-wide">Paziņojums par jaunumiem</h2>
+          <p class="text-tmd max-w-2xl mx-auto">Ja vēlaties saņemt paziņojumu, kad parādās kas jauns?  <br> Parakstieties, lai nepalaistu garām neko interesantu.</p>
+          <form name="submit-to-google-sheet" id="msg" class="border-4 bg-bgd border-tad rounded-xl p-5 max-w-md mx-auto">
+            <div class="flex items-end mb-3">
+              <div class="relative w-full mr-3 revue-form-group">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                  <svg class="w-5 h-5 text-td  " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                </div>
+                <input class="bg-bgd border focus:outline-none focus-visible:ring-1 ring-tad border-tad text-td text-sm rounded-lg focus:ring-tad  block w-full pl-10 p-2.5 " placeholder="Epasta adrese" type="email" name="email">
+              </div>
+              <div class="revue-form-actions">
+                <input type="submit" value="Parakstīt" class="cursor-pointer text-bgd bg-tad ring-tad focus:ring-1 font-medium rounded-lg text-sm px-5 py-2.5 text-center" name="subscribe" id="member_submit">
+              </div>
+            </div>
+            <div class="text-sm text-tmd self-center  tdspace-normal">Piesakoties, jūs piekrītat <a class="text-tad" href="https://www.privacypolicytemplate.net/live.php?token=HK7X7Ez4CAr7chiPUq9oz5MxSZPHZf2C">Privātuma politikai</a>.</div>
+          </form>
+        </section>
+        <script>
+          const scriptURL = 'https://script.google.com/macros/s/AKfycby_oiBqPCqPDgvtbIiHiGIpl1rKH84V46rPbmJfPXWPiC6CbSleNK_vSbn7e7Jyc0FKNw/exec'
+          const form = document.forms['submit-to-google-sheet']
+          const msg = document.getElementById("msg")
+        
+          form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+              .then(response => {
+                console.log('Success!', response)
+                form.reset()
+              })
+              .catch(error => console.error('Error!', error.message))
+          })
+        </script>
+      </main>
+<!--F------------------------------------------------------------------>
+      <footer class="relative border-t border-tad mt-16 sm:mt-24 lg:mt-40 py-6 sm:py-8 md:py-12">
+        <div class="container flex flex-wrap md:justify-between items-center md:items-start gap-12">
+          <div class="grid gap-2 grow justify-items-center md:justify-items-start basis-full md:basis-1/4">
+            <a href="" class="flex items-center">
+              <img src="../assets/edumathl.png" class="h-6 mr-3 sm:h-9">
+            </a>
+          </div>
+          <nav aria-label="Secondary navigation" class="text-sm flex flex-col items-center sm:items-start sm:flex-row text-center sm:text-left gap-6 justify-between md:justify-around grow basis-full md:basis-1/2 mt-2">
+            <div class="grid gap-3">
+              <p class="font-bold underline decoration-tad decoration-2 underline-offset-2 tracking-wide px-2">Informācija</p>
+              <ul aria-label="Traverse Locations">
+                <li>
+                  <a href="about.html" class="hover:text-tad transition-colors focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bgd px-2 ring-tad rounded-full">
+                    Par mums
+                  </a>
+                </li>
+                <li>
+                  <a href="faq.html" class="hover:text-tad transition-colors focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bgd px-2 ring-tad rounded-full">
+                    BUJ
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="grid gap-3">
+              <p class="font-bold underline decoration-tad decoration-2 underline-offset-2 tracking-wide px-2">Kontakti</p>
+              <ul aria-label="Contact Traverse">
+                <li>
+                  <a href="https://www.instagram.com/edumath.courses/" class="hover:text-tad transition-colors focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bgd px-2 ring-tad rounded-full">
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a href="https://t.me/+aHhDKgeE4tY1OGE0" class="hover:text-tad transition-colors focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bgd px-2 ring-tad rounded-full">
+                    Telegram
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="grid gap-3">
+              <p class="font-bold underline decoration-tad decoration-2 underline-offset-2 tracking-wide px-2">Licencēta</p>
+              <ul aria-label="About Traverse">
+                <li>
+                  <a href="https://www.privacypolicytemplate.net/live.php?token=HK7X7Ez4CAr7chiPUq9oz5MxSZPHZf2C" class="hover:text-tad transition-colors focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bgd px-2 ring-tad rounded-full">
+                    Privātuma politika
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <hr class="w-auto my-6 border-tad sm:mx-auto lg:my-8 container"/>
+        <div class="container flex flex-wrap md:justify-between items-center md:items-start gap-12 flex-col sm:flex-row">
+          <div class="grid gap-3">
+            <span class="text-sm text-tmd self-center tdspace-nowrap">© 2023 EDUMATH™. Visas tiesības aizsargātas.</span>
+          </div>
+          <div class="grid gap-3">
+            <span class="text-sm text-tmd self-center tdspace-nowrap">( ͡° ͜ʖ ͡°)</span>
+          </div>
+        </div>   
+      </footer> 
+      </div>
+<!--S------------------------------------------------------------------>
+      <a href="#scroll-up" class="fixed items-center bottom-1  md:bottom-3 right-1 md:right-7 z-20 flex justify-center font-medium p-1.5 md:p-3 border-4 border-tad bg-tad text-bgd rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke-width="5" stroke="currentColor" class="h-4 w-4"><path fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75" clip-rule="evenodd" /></svg>
+      </a>
+  </body>
+</html>
+
